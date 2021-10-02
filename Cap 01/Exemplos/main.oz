@@ -14,7 +14,7 @@
         declare V = 12
         {Browse V}
     
-    %Exemplo 03, 04: Criando funções
+    %Exemplos 03: Criando funções
         %função que calcula o fatorial de n recursivamente
         declare fun {Fact N } 
             if N==0 then 1 else  N * {Fact N-1} end
@@ -23,11 +23,22 @@
         
         %função que calcula a combinação de n tomado por k recursivamente
         declare fun {Comb N K}
-            {Fact N} div {Fact K} * {Fact N-K} %usa o div porque a / so faz divisões inteiras
+            {Fact N} div {Fact K} * {Fact N-K} 
         end
         {Browse {Comb 5 3}}
+    
+    %Exemplo 04: Listas
+        
+        declare 
+        H = 4
+        T = [1 2 3]
+        {Browse T|H} % não cria nova lista
+        {Browse H|T} % cria nova lista
 
-
+        declare L = [5 6 7]
+        {Browse L.1} % acessa a cabeça da lista [1]
+        {Browse L.2} % acessa a cauda da lista [1:]
+        
 
 
 
