@@ -23,7 +23,7 @@
         
         %função que calcula a combinação de n tomado por k recursivamente
         declare fun {Comb N K}
-            {Fact N} div {Fact K} * {Fact N-K} 
+            {Fact N} div ({Fact K} * {Fact N-K})
         end
         {Browse {Comb 5 3}}
     
