@@ -1,0 +1,1 @@
+% O livro afirma que programas de complexidade exponencial são impraticáveis para entradas grandes, o que faz total sentido visto que, por exemplo, quando se usa recursão nesse tipo de algoritmo existe muito retraabalho.

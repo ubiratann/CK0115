@@ -11,5 +11,5 @@ Pow100 = Pow50 * Pow50
     /*
         Não é possível calcular 100! de forma não trabalhosa e 
         sem uso de novas funções, visto que não existe uma forma 
-        matemática simplificada.
+        fazer as multiplicações de forma mais rápida.
     */

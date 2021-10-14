@@ -1,16 +1,16 @@
 
 
-    %Exemplo 01: O procemiento Browse
+    %Exemplos 01: O procedim ento Browse
         {Browse 9999 }
     %   { }: são usados para chamar funções ou procedimentos
     %   Browse x : procedimento que recebe um argumento e mostra ele em uma nova janela (ou janela ja aberta)
 
-    %Exemplo 02: Sintaxe de variáveis
+    %Exemplos 02: Sintaxe de variáveis
         %declare: declara uma variavel nova, variaveis so podem ser atribuidas 1 vez
         %         se declarada uma variavel com o mesmo nome, a antiga é sobrescrita
         %         calculos que usaram a variavel antiga não são atualizados
         
-        %indentificador: variaveis sempre começam com uma letra maiúscula seguida de numeros ou letras
+        %indentificador: variaveis sempre começam com uma letra maiúscula seguida de números ou letras
         declare V = 12
         {Browse V}
     
@@ -27,7 +27,7 @@
         end
         {Browse {Comb 5 3}}
     
-    %Exemplo 04: Listas
+    %Exemplos 04: Listas
         
         declare 
         H = 4
@@ -35,10 +35,16 @@
         {Browse T|H} % não cria nova lista
         {Browse H|T} % cria nova lista
 
-        declare L = [5 6 7]
+        declare L = [1]
         {Browse L.1} % acessa a cabeça da lista [1]
         {Browse L.2} % acessa a cauda da lista [1:]
         
+        case L of H|T then {Browse H} {Browse T} end %atribui a cabeça da lista a H e a cauda a T
+
+    %Exemplo 05: Lazy evaluation (Valoração preguiçosa)
+        declare fun {Lazy Ints N}
+            N | {Ints N+1}
+        end
 
 
 

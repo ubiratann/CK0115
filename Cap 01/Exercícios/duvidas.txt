@@ -1,0 +1,2 @@
+1. Como provar as questões 03, 04
+2. Questão 05,a função Ints é pra dar erro de aridade mesmo, pq no livro funciona, e o que seria esse erro? 

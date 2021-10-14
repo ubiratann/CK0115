@@ -7,7 +7,7 @@ end
 
 fun {Den K}
     if K == 0 then 1 else K * {Den K-1} end
-end
+end     
 
 fun {Comb1 N K}
     if K == 0 then 1 else {Num N K 0} div {Den K} end
@@ -30,9 +30,3 @@ end
 
 {Browse {Comb2 10 9}}
 
-
-
-/*
-1 -> 3 * ( 2 * ( 1 * ( ) ) )
-
-*/
