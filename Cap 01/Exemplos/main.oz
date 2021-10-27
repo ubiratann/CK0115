@@ -45,7 +45,13 @@
         declare fun {Lazy Ints N}
             N | {Ints N+1}
         end
-
+    
+    %Exemplo 06: DataFlow e Threads
+        % neste exemplo, mesmo com o delay de 1 seg. a thread executa a multiplicação
+        declare X in
+        thread {Browse start} {Browse X*X} end
+        {Delay 1000} X = 999
+        
 
 
 
